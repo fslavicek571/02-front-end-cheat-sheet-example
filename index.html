@@ -230,6 +230,7 @@
                                     <td>povijest</td>
                                     <td>tjelesni</td>
                                     </tr>
+                                </table>
 <h2>Forms</2>
     <h3>Search form</h3>
     <form action="https://www.ecosia.org/search" method="get">
@@ -238,8 +239,8 @@
         <button>Go</button>
     </form>
     <br><form action="https://duckduckgo.com" method="get">
-        <label>DuckDuckGo:</label>
-        <input type="text" name="q">
+        <label for="q">DuckDuckGo:</label>
+        <input id="q" type="text" name="q">
         <button>Go!</button>
     </form>
     <br><form action="https://www.google.com/search" method="get">
@@ -247,8 +248,103 @@
         <input type="text" name="q">
         <button>Go!</button>
     </form>
+    <h3>Login form</h3>
+    <form action="" novalidate autocomplete="off">
+<input type="email" name="email" placeholder="Email" required>
+<input type="password" name="password" placeholder="Password" minlength="8" required>
+<button type="submit">Sign in</button>
+</form>
+<h3>Age gate form</h3>
+<form action="">
+    <select name="day" id="day">
+        <option value="" disabled selected>Day</option>
+        <option value="1">1<option>
+        <option value="1">2<option>
+        <option value="1">3<option>
+        <option value="1">4<option>
+        <option value="1">5<option>
+        <option value="1">6<option>
+        <option value="1">7<option>
+        <option value="1">8<option>
+        <option value="1">9<option>
+        <option value="1">10<option>
+        <option value="1">11<option>
+        <option value="1">12<option>
+        <option value="1">13<option>
+        <option value="1">14<option>
+        <option value="1">15<option>
+        <option value="1">16<option>
+        <option value="1">17<option>
+        <option value="1">18<option>
+        <option value="1">19<option>
+        <option value="1">20<option>
+        <option value="1">21<option>
+        <option value="1">22<option>
+        <option value="1">23<option>
+        <option value="1">24<option>
+        <option value="1">25<option>
+        <option value="1">26<option>
+        <option value="1">27<option>
+        <option value="1">28<option>
+        <option value="1">29<option>
+        <option value="1">30<option>
+        <option value="1">31<option>
+        </select>
 
+<select name="month" id="month">
+    <option value="" disabled selected>Month</option>
+    <option value="1">January</option>
+    <option value="2">February</option>
+    <option value="3">March</option>
+    <option value="1">April</option>
+    <option value="2">May</option>
+    <option value="3">June</option>
+    <option value="1">July</option>
+    <option value="2">August</option>
+    <option value="3">September</option>
+    <option value="1">October</option>
+    <option value="2">Noveber</option>
+    <option value="3">December</option>
+</select>
+<select name="Year" id="year">
+    <option value="" disabled selected>Year</option>
+    <option value="1">2021</option>
+    <option value="2">2020</option>
+    <option value="3">2019</option>
+    <option value="1">2018</option>
+    <option value="2">2017</option>
+    <option value="3">2016</option>
+    <option value="1">2015</option>
+    <option value="2">2014</option>
+    <option value="3">2013</option>
+    <option value="3">2012</option>
+    <option value="3">2011</option>
+    <option value="3">2010</option>
+</select>
+<button type="submit"> Let me in!</button>
+</form>
+<h3>Survey form</3>
+    <form action="">
+    <p>Dobro se snalazim u HTML. (1 - U potpunosti se ne slažem, 5 - U potpunosti se slažem)</p>
+    <label><input type="radio" name="answer" value="1"> 1</label>
+    <label><input type="radio" name="answer" value="2"> 2</label>
+        <label><input type="radio" name="answer" value="3"> 3</label>
+            <label><input type="radio" name="answer" value="4"> 4</label>
+                <label><input type="radio" name="answer" value="5"> 5</label>
+    </form>
+    <h3>Newsletter form</h3>
+    <form>
+        <form action="" novalidate autocomplete="off">
+            <label>Email:<input type="email" name="email" placeholder="Email adresa" required></label>
+ </form>
+ <form action="">
+     <label>Pick your newsletter topics</label>
+    <label><input type="checkbox" name="news_lettertopic"> Svijet</label>
+    <label><input type="checkbox" name="news_lettertopic"> Vrijeme</label>
+    <label><input type="checkbox" name="news_lettertopic"> Posao</label>
+    <label><input type="checkbox" name="news_lettertopic"> Tehnologija</label>
+    <button type="submit"> Sign me up!</button>
+    </form>
             <p><a href="#">Povratak na vrh stranice</a></p>
-
     </body>
 </html>
